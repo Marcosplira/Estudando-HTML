@@ -1,0 +1,76 @@
+<form name="calculadora">
+<div class="calculadora">
+<input type="text" name="tela">
+
+<table>
+    <tr>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '7'">7</button></td>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '8'">8</button></td>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '9'">9</button></td>
+        <td><button type="button" class="preto" onclick="calculadora.tela.value += '/'">/</button></td>
+    </tr>
+
+    <tr>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '4'">4</button></td>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '5'">5</button></td>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '6'" >6</button></td>
+        <td><button type="button" class="preto" onclick="calculadora.tela.value += '*'">*</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '1'">1</button></td>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '2'">2</button></td>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '3'">3</button></td>
+        <td><button type="button" class="preto" onclick="calculadora.tela.value += '-'">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" class="vermelho" onclick="calculadora.tela.value = ''">C</button></td>
+        <td><button type="button" class="azul" onclick="calculadora.tela.value += '0'">0</button></td>
+        <td><button type="button" class="verde" onclick="calculadora.tela.value = eval(calculadora.tela.value)">=</button></td>
+        <td><button type="button" class="preto" onclick="calculadora.tela.value += '+'">+</button></td>
+    </tr>
+</table>
+</div> 
+</form> 
+<style>
+    .azul {
+        background-color: blue;
+        color: white;
+    }
+
+    .preto {
+        background-color: black;
+        color: white;
+    }
+
+    .vermelho {
+        background-color: red;
+        color: white;
+    }
+
+    .verde {
+        background-color: green;
+        color: white;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        border: none;
+        border-radius: 4px;
+    }
+    input {
+    width: 136px; 
+    height: 40px; 
+    border: black 2px solid; 
+    border-radius: 4px; 
+   text-align: right; 
+}
+.calculadora {
+   background-color: yellow; 
+   width: 136px; 
+   border: grey 2px solid; 
+   border-radius: 10px; 
+   padding: 10px; 
+	}
+</style>
